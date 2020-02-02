@@ -17,6 +17,11 @@ const routes: Routes = [
                                 m => m.Tab1PageModule
                             ),
                     },
+                    {
+                        path: 'agregar/:listaId',
+                        loadChildren:
+                            '../agregar/agregar.module#AgregarPageModule',
+                    },
                 ],
             },
             {
@@ -28,6 +33,11 @@ const routes: Routes = [
                             import('../tab2/tab2.module').then(
                                 m => m.Tab2PageModule
                             ),
+                    },
+                    {
+                        path: 'agregar/:listaId',
+                        loadChildren:
+                            '../agregar/agregar.module#AgregarPageModule',
                     },
                 ],
             },
